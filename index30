@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<body>
+<seciton><h4>for 예제 실습</h4>
+<script>
+function sumy(){
+var result = 0;
+for(var i=0; i<arguments.lenght; i++){
+result = result + arguments[i];
+}
+return result;
+}
+function printValue(){
+for(var i in arguments)
+ document.write(arguments[i],"<br/>");
+}
+var value = sumy(10,20,30);
+printValue(value);
+printValue("a",10,15,"v");
+</script></seciton>
+</body>
+</html>
